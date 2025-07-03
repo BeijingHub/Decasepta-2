@@ -2,6 +2,8 @@
 import pygame
 import sys
 import os
+const bgHome = new Image();
+bgHome.src = " IMG-2f26cd3e346c59c3aadf4a88c   ";
 
 # === [INIT: Setup] ===
 pygame.init()
@@ -19,6 +21,7 @@ def load_environment():
     return bg
 
 background = load_environment()
+ctx.drawImage(bgHome, 0, 0, canvas.width, canvas.height);
 
 # === [CHARACTER_SELECTOR: Emoji Characters] ===
 # [MARKER: CHARACTER_SELECTOR]
